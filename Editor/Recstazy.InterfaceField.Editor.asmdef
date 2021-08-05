@@ -1,0 +1,16 @@
+{
+    "name": "Recstazy.InterfaceField.Editor",
+    "rootNamespace": "Recstazy.SerializedInterface",
+    "references": [
+        "GUID:32b63c7b6f61c5142ae8347831f68866"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
