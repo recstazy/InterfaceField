@@ -1,0 +1,17 @@
+{
+  "name": "com.recstazy.interface.field",
+  "version": "0.1.0",
+  "displayName": "Interface Field",
+  "description": "Editor tool to constraint serialized field type by interface type",
+  "unity": "2018.1",
+  "unityRelease": "1f1",
+  "keywords": [
+    "recstazy",
+    "interface",
+    "field"
+  ],
+  "author": {
+    "name": "Recstazy",
+    "email": "djexstas9@gmail.com"
+  }
+}
