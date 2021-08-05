@@ -80,7 +80,9 @@ namespace Recstazy.SerializedInterface
 
             rect.x += rect.width;
             rect.width = _rect.width - rect.width;
-            GUI.Box(rect, value == null ? "None" : $"{value.name} ({_interfaceType.Name})", s_normalStyle);
+            GUIContent content = EditorGUIUtility.ObjectContent(value, typeof(GameObject));
+            content.text = value == null ? $"None ({_fieldType.Name} : {_interfaceType.Name})" : $"{value.name} ({value.GetType().Name})";
+            GUI.Box(rect, content, s_normalStyle);
 
             rect.x = _rect.x + _rect.width - s_buttonWidth - 1f;
             rect.width = s_buttonWidth;
@@ -206,10 +208,6 @@ namespace Recstazy.SerializedInterface
                     
                     Event.current.Use();
                 }
-            }
-            else if (Event.current.commandName == ObjectPickerCloseCommand)
-            {
-
             }
         }
 
