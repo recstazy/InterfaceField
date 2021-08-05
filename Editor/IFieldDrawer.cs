@@ -172,7 +172,7 @@ namespace Recstazy.SerializedInterface
 
             foreach (var a in assemblies)
             {
-                var typesInAssemblies = a.GetTypes().Where(t => t.IsSubclassOf(typeof(Object)) && t.GetInterface(_interfaceType.Name) != null).ToArray();
+                var typesInAssemblies = a.GetTypes().Where(t => t.IsSubclassOf(_fieldType) && t.GetInterface(_interfaceType.Name) != null).ToArray();
                 compatableTypes = compatableTypes.Concat(typesInAssemblies);
             }
 
